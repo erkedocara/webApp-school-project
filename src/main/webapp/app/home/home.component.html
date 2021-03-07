@@ -1,36 +1,41 @@
-<div class="row">
-    <div class="col-md-3">
-        <span class="hipster img-fluid rounded"></span>
+<div class="row" style="padding: 0">
+
+
+    <div class="col-md-2">
+        <span class=" img-fluid rounded"></span>
     </div>
 
-    <div class="col-md-9">
-        <h1 class="display-4">Welcome to Erkedo Cara Web App</h1>
 
-        <p class="lead">This is your homepage</p>
+    <div class="col-md-8">
+
+        <h1 class="display-4">Welcome to this demo app done for fun and deployed to Aws</h1>
+
+        <p class="lead">This is Homepage</p>
 
         <div [ngSwitch]="isAuthenticated()">
             <div class="alert alert-success" *ngSwitchCase="true">
                 <span id="home-logged-message" *ngIf="account">You are logged in as user "{{ account.login }}".</span>
             </div>
 
-            <div class="alert alert-warning" *ngSwitchCase="false">
+            <div class="alert alert-danger" *ngSwitchCase="false">
                 <span>If you want to </span>
                 <a class="alert-link" (click)="login()">sign in</a><span>, you can try the default accounts:<br/>- Administrator (login="admin" and password="admin") <br/>- User (login="user" and password="user").</span>
             </div>
 
-            <div class="alert alert-warning" *ngSwitchCase="false">
-                <span>You don't have an account yet?</span>&nbsp;
-                <a class="alert-link" routerLink="account/register">Register a new account</a>
-            </div>
+            <!--            <div class="alert alert-warning" *ngSwitchCase="false">-->
+            <!--                <span>You don't have an account yet?</span>&nbsp;-->
+            <!--                <a class="alert-link" routerLink="account/register">Register a new account</a>-->
+            <!--            </div>-->
         </div>
 
         <p>
-            If you have any question or problem with site contact at email adress: <a>erkedocara1@gmail.com</a>
-        </p>
-
-
-        <p>
-            <span>If you like JHipster, don't forget to give us a star on</span> <a href="https://github.com/jhipster/generator-jhipster" target="_blank" rel="noopener noreferrer">GitHub</a>!
+            If you have any question or problem with site contact me at : <a>erkedocara1@gmail.com</a>
         </p>
     </div>
+    <div class="col-md-2">
+        <span class=" img-fluid rounded"></span>
+    </div>
+
+
 </div>
+
