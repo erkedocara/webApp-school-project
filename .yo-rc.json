@@ -36,7 +36,16 @@
     "dtoSuffix": "DTO",
     "otherModules": [],
     "blueprints": [],
-    "prettierJava": true
+    "prettierJava": true,
+    "aws": {
+      "applicationName": "webapp-demo-erkedo-cara",
+      "environmentName": "webapp-demo-erkedo-cara-env",
+      "bucketName": "webapp-demo-erkedo-cara",
+      "instanceType": "t2.micro",
+      "awsRegion": "eu-central-1",
+      "dbName": "webappDemoErkedoCara",
+      "dbInstanceClass": "db.t2.micro"
+    }
   },
   "git-provider": "GitHub",
   "git-company": "erkedocara",
